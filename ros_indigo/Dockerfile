@@ -9,8 +9,8 @@ RUN apt update && apt install -y wget && \
 RUN apt update && apt install -y python-catkin-tools software-properties-common
 
 # Install Python 3.5
-RUN add-apt-repository ppa:deadsnakes/ppa && \
-    apt update && apt install python3.5 python3.5-dev
+RUN add-apt-repository -y ppa:deadsnakes/ppa && \
+    apt update && apt install -y python3.5 python3.5-dev
 
 RUN pip3.5 install empy # Throws errors otherwise
 RUN pip3.5 install numpy scikit-learn CausalGraphicalModels causality
