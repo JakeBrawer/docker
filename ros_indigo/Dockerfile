@@ -12,5 +12,5 @@ RUN apt update && apt install -y python-catkin-tools software-properties-common
 RUN add-apt-repository -y ppa:deadsnakes/ppa && \
     apt update && apt install -y python3.5 python-pip
 
-RUN python -m pip install install empy # Throws errors otherwise
-RUN python -m pip install install numpy scikit-learn causalgraphicalmodels causality
+RUN python3.5 -m pip install install empy # Throws errors otherwise
+RUN python3.5 -m pip install install numpy scikit-learn causalgraphicalmodels causality
