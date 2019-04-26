@@ -15,5 +15,5 @@ RUN add-apt-repository -y ppa:deadsnakes/ppa && \
 RUN apt-get install -y  libblas-dev liblapack-dev libatlas-base-dev gfortran
 
 RUN python3.5 -m pip install numpy scipy
-RUN python3.5 -m  scikit-learn causalgraphicalmodels causality
+RUN python3.5 -m pip scikit-learn causalgraphicalmodels causality
 RUN python3.5 -m pip install  empy # Throws errors otherwise
